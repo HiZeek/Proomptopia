@@ -18,7 +18,7 @@ const ProfilePage = () => {
       setMyPosts(data);
     };
     if (session?.user.id) fetchPosts();
-  }, []);
+  }, [session]);
 
   const handleEdit = (post) => {
     console.log("edited");
